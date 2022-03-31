@@ -17,8 +17,8 @@ class RecursiveFactorial {
      * @param userNum is accepted
      * @return the factorial
      */
-    public static int factorial(int userNum) {
-        final int factorialAnswer;
+    public static long factorial(long userNum) {
+        final long factorialAnswer;
 
         if (userNum == 1 || userNum == 0) {
             factorialAnswer = 1;
@@ -37,8 +37,8 @@ class RecursiveFactorial {
         // declaring variables
         final Scanner sc = new Scanner(System.in);
         final String userString;
-        final int userNumInt;
-        final int userAnswer;
+        final long userNumInt;
+        final long userAnswer;
 
         System.out.println("Today you will find out the answer when a"
             + "number is put with factorial.\n");
@@ -48,7 +48,7 @@ class RecursiveFactorial {
         System.out.println();
 
         try {
-            userNumInt = Integer.parseInt(userString);
+            userNumInt = Long.parseLong(userString);
 
             if (userNumInt >= 0) {
                 userAnswer = factorial(userNumInt);
