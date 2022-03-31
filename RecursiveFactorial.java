@@ -23,7 +23,8 @@ class RecursiveFactorial {
         if (userNum == 1 || userNum == 0) {
             factorialAnswer = (double) 1;
         } else {
-            factorialAnswer = (double) factorial(userNum - 1) * (double) userNum;
+            factorialAnswer = (double) factorial(userNum - 1)
+                * (double) userNum;
         }
         return factorialAnswer;
     }
